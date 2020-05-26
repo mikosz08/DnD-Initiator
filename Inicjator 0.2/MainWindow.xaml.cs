@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Windows;
 using System.Windows.Media;
@@ -20,10 +21,9 @@ namespace Inicjator
 
     public partial class MainWindow : Window
     {
-
-        List<Hero> heroList = new List<Hero>();
-        List<Hero> enemyList = new List<Hero>();
-        List<Hero> battleList = new List<Hero>();
+        readonly List<Hero> heroList = new List<Hero>();
+        readonly List<Hero> enemyList = new List<Hero>();
+        readonly List<Hero> battleList = new List<Hero>();
 
         //current hero index:
         int currentIndex = 0;
@@ -45,10 +45,23 @@ namespace Inicjator
         private void AddingButton_Click(object sender, RoutedEventArgs e)
         {
 
+            if (!(int.TryParse(type_initiative.Text, out _)))
+            {
+                PrintStatus("Wrong Syntax");
+                return;
+            }
+
             //Check If Data Is Present
             if (type_name.Text.Equals("") || type_initiative.Text.Equals(""))
             {
-                printStatus("No Data To Save");
+                PrintStatus("No Data To Save");
+                return;
+            }
+
+            //Check If Data Is Correct
+            if (int.Parse(type_initiative.Text) < 0 || int.Parse(type_initiative.Text) > 20)
+            {
+                PrintStatus("Check Initiative");
                 return;
             }
 
@@ -63,7 +76,7 @@ namespace Inicjator
                 heroToAdd.Init = heroInit;
 
                 //Add Hero To List
-                printStatus("Adding: " + heroToAdd);
+                PrintStatus("Adding: " + heroToAdd);
 
                 if (heroRadioButton.IsChecked == true)
                 {
@@ -75,16 +88,16 @@ namespace Inicjator
                 }
 
                 //Refresh Lists
-                refreshList();
+                RefreshList();
 
                 //Clear Text Boxes
-                clearTextBoxes();
+                ClearTextBoxes();
 
             }
             catch (Exception)
             {
-                printStatus("Error");
-                clearTextBoxes();
+                PrintStatus("Error");
+                ClearTextBoxes();
                 return;
             }
 
@@ -103,7 +116,7 @@ namespace Inicjator
 
         }
 
-        private void enemyRadioButton_Checked(object sender, RoutedEventArgs e)
+        private void EnemyRadioButton_Checked(object sender, RoutedEventArgs e)
         {
             //Enemy Radio Button
             if (heroRadioButton.IsChecked == true)
@@ -113,7 +126,7 @@ namespace Inicjator
             }
         }
 
-        private void clearAllButton_Click(object sender, RoutedEventArgs e)
+        private void ClearAllButton_Click(object sender, RoutedEventArgs e)
         {
             //Clear and sets default values.
 
@@ -129,15 +142,19 @@ namespace Inicjator
             previousFighter.Text = "-";
             nextFighter.Text = "-";
 
+            currentIndex = 0;
+            nextIndex = 0;
+            prevIndex = 0;
+
         }
 
-        private void clearTextBoxes()
+        private void ClearTextBoxes()
         {
             type_initiative.Clear();
             type_name.Clear();
         }
 
-        private void refreshList()
+        private void RefreshList()
         {
             //Display heroes/enemies on lists:
 
@@ -168,8 +185,10 @@ namespace Inicjator
 
         private void Quit_Click(object sender, RoutedEventArgs e)
         {
-            ExitWindow exit = new ExitWindow();
-            exit.Owner = this;
+            ExitWindow exit = new ExitWindow
+            {
+                Owner = this
+            };
             exit.ShowDialog();
         }
 
@@ -180,7 +199,7 @@ namespace Inicjator
             //Check if there is more than 1 hero in each List<Hero>.
             if (heroList.Count < 1 || enemyList.Count < 1)
             {
-                printStatus("Not Enough Participants!");
+                PrintStatus("Not Enough Participants!");
                 return;
             }
 
@@ -197,7 +216,7 @@ namespace Inicjator
             }
 
             //Display default setup.
-            displayFighters();
+            DisplayFighters();
 
             //Turn off encounter button:
             startEncounterButton.IsEnabled = false;
@@ -205,7 +224,7 @@ namespace Inicjator
         }
 
 
-        private void displayFighters()
+        private void DisplayFighters()
         {
             //starting setup of encounter
 
@@ -221,9 +240,9 @@ namespace Inicjator
         private void NextButton_Click(object sender, RoutedEventArgs e)
         {
 
-            if(battleList.Count() == 0)
+            if (battleList.Count() == 0)
             {
-                printStatus("forbidden action");
+                PrintStatus("forbidden action");
                 return;
             }
 
@@ -251,7 +270,7 @@ namespace Inicjator
             }
             previousFighter.Text = battleList[prevIndex].Name;
         }
-        private void printStatus(string message)
+        private void PrintStatus(string message)
         {
             status_log.Text = message;
             status_log.Foreground = Brushes.Red;
