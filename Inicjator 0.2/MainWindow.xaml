@@ -36,7 +36,7 @@
                          Content="Hero" HorizontalAlignment="Left" Margin="16,79,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.184,0.495" Checked="RadioButton_Checked" Width="53" FontFamily="Yu Gothic UI Semibold"/>
 
             <RadioButton x:Name="enemyRadioButton" 
-                         Content="Enemy" HorizontalAlignment="Left" Margin="86,79,0,0" VerticalAlignment="Top" IsChecked="True" Checked="enemyRadioButton_Checked" FontFamily="Yu Gothic UI Semibold"/>
+                         Content="Enemy" HorizontalAlignment="Left" Margin="86,79,0,0" VerticalAlignment="Top" IsChecked="True" Checked="EnemyRadioButton_Checked" FontFamily="Yu Gothic UI Semibold"/>
 
             <Button x:Name="AddingButton" 
                 Content="Add!" HorizontalAlignment="Left" Margin="49,47,0,32" Width="44" Background="#FFE270CE" Click="AddingButton_Click"/>
@@ -48,7 +48,7 @@
                 Content="Quit" HorizontalAlignment="Left" Margin="367,44,0,0" VerticalAlignment="Top" Width="45" Height="19" Background="#FFE826B5" FontFamily="Yu Gothic UI Semibold" Click="Quit_Click" FontSize="9"/>
 
             <TextBlock x:Name="status_log"
-                       HorizontalAlignment="Left" Margin="19,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="22" FontStyle="Italic" TextAlignment="Center" FontWeight="Bold" TextDecorations="{x:Null}" FontFamily="Consolas" FontSize="10">
+                       HorizontalAlignment="Left" Margin="19,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="22" FontStyle="Italic" TextAlignment="Center" FontWeight="Bold" TextDecorations="{x:Null}" FontFamily="Consolas" FontSize="15">
                 <TextBlock.Background>
                     <SolidColorBrush Color="Black" Opacity="0.415"/>
                 </TextBlock.Background>
@@ -66,7 +66,7 @@
             <TextBox x:Name="enemyListBox" 
                      HorizontalAlignment="Left" Height="94" Margin="0,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Background="#FFDCD5D5"/>
             <Button x:Name="clearAllButton" 
-                    Content="Clear!" HorizontalAlignment="Left" Margin="87,244,0,0" VerticalAlignment="Top" Width="65" Background="#FF84E890" Click="clearAllButton_Click" FontFamily="Yu Gothic UI Semibold"/>
+                    Content="Clear!" HorizontalAlignment="Left" Margin="87,244,0,0" VerticalAlignment="Top" Width="65" Background="#FF84E890" Click="ClearAllButton_Click" FontFamily="Yu Gothic UI Semibold"/>
         </Grid>
         <Grid x:Name="Encounter" Margin="131,322,10,56" Grid.Column="1">
             <Rectangle Fill="#FF66A1D2" HorizontalAlignment="Left" Height="88" Margin="-111,-160,0,0" Stroke="Black" VerticalAlignment="Top" Width="220"/>
@@ -74,7 +74,7 @@
             <Button x:Name="startEncounterButton" Content="Start Encounter!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Height="31" Margin="-5,10,0,0" FontStyle="Italic" Background="#FFE0CD5F" FontWeight="Bold" Click="Button_Click"/>
 
             <TextBlock x:Name="currentFighter" 
-                       Margin="-51,-152,76,161" TextWrapping="Wrap" Text="-" FontSize="16" FontWeight="Bold"  TextAlignment="Center" FontFamily="Comic Sans MS"/>
+                       Margin="-51,-152,76,161" TextWrapping="Wrap" Text="-" FontSize="16" FontWeight="Bold"  TextAlignment="Center" FontFamily="Comic Sans MS" Foreground="#FFD60F0F"/>
             <TextBlock x:Name="nextFighter" 
                        Margin="34,-118,14,121" TextWrapping="Wrap" Text="-" FontWeight="Bold"  TextAlignment="Center" FontFamily="Comic Sans MS"/>
             <TextBlock x:Name="previousFighter" 
