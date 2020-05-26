@@ -37,6 +37,7 @@ namespace Inicjator
             NextButton.IsEnabled = false;
             enemyListBox.IsReadOnly = true;
             heroListBox.IsReadOnly = true;
+            
         }
 
         //AddToListButton
@@ -69,6 +70,7 @@ namespace Inicjator
             {
                 ClearFighters();
                 startEncounterButton.IsEnabled = true;
+                NextButton.IsEnabled = false;
             }
 
             try
@@ -82,7 +84,7 @@ namespace Inicjator
                 heroToAdd.Init = heroInit;
 
                 //Add Hero To List
-                PrintStatus("Adding: " + heroToAdd);
+                PrintStatus("Added:\n" + heroToAdd);
 
                 if (heroRadioButton.IsChecked == true)
                 {
@@ -135,8 +137,10 @@ namespace Inicjator
         {
             //Clear and sets default values.
             startEncounterButton.IsEnabled = true;
+            NextButton.IsEnabled = false;
             ClearFighters();
             ClearLists();
+            PrintStatus("Cleared!");
         }
 
         private void ClearLists()
@@ -173,10 +177,8 @@ namespace Inicjator
 
             foreach (Hero hero in heroList)
             {
-
                 sb.Append(hero.Name).Append("\t");
                 sb.Append(hero.Init).Append("\n");
-
             }
             heroListBox.Text = sb.ToString();
 
@@ -185,10 +187,8 @@ namespace Inicjator
 
             foreach (Hero hero in enemyList)
             {
-
                 sb.Append(hero.Name).Append("\t");
                 sb.Append(hero.Init).Append("\n");
-
             }
             enemyListBox.Text = sb.ToString();
 
@@ -203,7 +203,7 @@ namespace Inicjator
             exit.ShowDialog();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void StartEncounter(object sender, RoutedEventArgs e)
         {
             //This Method Sets up The Battle
 
@@ -321,7 +321,7 @@ class Hero
 
     public override string ToString()
     {
-        return Name + " " + Init;
+        return Name + ", " + Init + ".";
     }
 
 }
