@@ -1,0 +1,50 @@
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\bin\Debug\Inicjator.exe.config
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\bin\Debug\Inicjator.exe
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\bin\Debug\Inicjator.pdb
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\Inicjator.csprojAssemblyReference.cache
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\MainWindow.g.cs
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\App.g.cs
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\Inicjator_MarkupCompile.cache
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\Inicjator_MarkupCompile.lref
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\MainWindow.baml
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\Inicjator.g.resources
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\Inicjator.Properties.Resources.resources
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\Inicjator.csproj.GenerateResource.cache
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\Inicjator.csproj.CoreCompileInputs.cache
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\Inicjator.exe
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\Inicjator.pdb
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\ExitWindow.g.cs
+C:\Users\ziole\OneDrive\WORK_SPACE_DATABASE\Visual Studio\Inicjator\obj\Debug\ExitWindow.baml
+C:\Users\ziole\source\repos\Inicjator\bin\Debug\Inicjator.exe.config
+C:\Users\ziole\source\repos\Inicjator\bin\Debug\Inicjator.exe
+C:\Users\ziole\source\repos\Inicjator\bin\Debug\Inicjator.pdb
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\Inicjator.csprojAssemblyReference.cache
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\ExitWindow.g.cs
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\MainWindow.g.cs
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\App.g.cs
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\Inicjator_MarkupCompile.cache
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\Inicjator_MarkupCompile.lref
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\ExitWindow.baml
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\MainWindow.baml
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\Inicjator.g.resources
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\Inicjator.Properties.Resources.resources
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\Inicjator.csproj.GenerateResource.cache
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\Inicjator.csproj.CoreCompileInputs.cache
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\Inicjator.exe
+C:\Users\ziole\source\repos\Inicjator\obj\Debug\Inicjator.pdb
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\bin\Debug\Inicjator.exe.config
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\bin\Debug\Inicjator.exe
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\bin\Debug\Inicjator.pdb
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\ExitWindow.g.cs
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\MainWindow.g.cs
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\App.g.cs
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\Inicjator_MarkupCompile.cache
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\Inicjator_MarkupCompile.lref
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\ExitWindow.baml
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\MainWindow.baml
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\Inicjator.g.resources
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\Inicjator.Properties.Resources.resources
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\Inicjator.csproj.GenerateResource.cache
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\Inicjator.csproj.CoreCompileInputs.cache
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\Inicjator.exe
+C:\Users\ziole\Source\Repos\mikosz08\DnD-Initiator\Inicjator 0.2\obj\Debug\Inicjator.pdb
