@@ -43,6 +43,7 @@ namespace Inicjator
         private void AddingButton_Click(object sender, RoutedEventArgs e)
         {
 
+            //Check If Initiative is and Integer
             if (!(int.TryParse(type_initiative.Text, out _)))
             {
                 PrintStatus("Wrong Syntax");
@@ -61,6 +62,13 @@ namespace Inicjator
             {
                 PrintStatus("Check Initiative");
                 return;
+            }
+
+            //If there is ongoing encounter and You want to add new hero/enemy, then clear and create new one.
+            if(startEncounterButton.IsEnabled == false)
+            {
+                ClearFighters();
+                startEncounterButton.IsEnabled = true;
             }
 
             try
@@ -126,15 +134,22 @@ namespace Inicjator
         private void ClearAllButton_Click(object sender, RoutedEventArgs e)
         {
             //Clear and sets default values.
+            startEncounterButton.IsEnabled = true;
+            ClearFighters();
+            ClearLists();
+        }
 
+        private void ClearLists()
+        {
             heroList.Clear();
             enemyList.Clear();
             battleList.Clear();
             heroListBox.Clear();
             enemyListBox.Clear();
+        }
 
-            startEncounterButton.IsEnabled = true;
-
+        private void ClearFighters()
+        {
             currentFighter.Text = "-";
             previousFighter.Text = "-";
             nextFighter.Text = "-";
@@ -142,7 +157,6 @@ namespace Inicjator
             currentIndex = 0;
             nextIndex = 0;
             prevIndex = 0;
-
         }
 
         private void ClearTextBoxes()
