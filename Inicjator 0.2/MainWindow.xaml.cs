@@ -17,8 +17,6 @@ namespace Inicjator
     /// during the encounter. 
     /// </summary>
 
-
-
     public partial class MainWindow : Window
     {
         readonly List<Hero> heroList = new List<Hero>();
@@ -102,7 +100,6 @@ namespace Inicjator
             }
 
         }
-
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
@@ -222,8 +219,6 @@ namespace Inicjator
             startEncounterButton.IsEnabled = false;
             NextButton.IsEnabled = true;
         }
-
-
         private void DisplayFighters()
         {
             //starting setup of encounter
@@ -236,7 +231,6 @@ namespace Inicjator
             nextFighter.Text = battleList[nextIndex].Name;
 
         }
-
         private void NextButton_Click(object sender, RoutedEventArgs e)
         {
 
