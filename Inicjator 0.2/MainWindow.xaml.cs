@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Windows;
 using System.Windows.Media;
@@ -16,6 +15,11 @@ namespace Inicjator
     /// the order of movement 
     /// during the encounter. 
     /// </summary>
+    
+        //TODO:
+        //licznik tur
+        //wyswietlac cala
+        //usuwanie
 
     public partial class MainWindow : Window
     {
