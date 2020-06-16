@@ -61,7 +61,7 @@
             <TextBlock HorizontalAlignment="Left" Text="Enemies" Margin="0,126,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold"/>
 
             <TextBox x:Name="heroListBox" 
-                     HorizontalAlignment="Left" Height="94" Margin="0,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Background="#FFDCD5D5"/>
+                     HorizontalAlignment="Left" Height="94" Margin="0,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Background="#FFDCD5D5" TextChanged="heroListBox_TextChanged"/>
 
             <TextBox x:Name="enemyListBox" 
                      HorizontalAlignment="Left" Height="94" Margin="0,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Background="#FFDCD5D5"/>
