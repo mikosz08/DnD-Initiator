@@ -18,8 +18,7 @@ namespace Inicjator
     
         //TODO:
         //licznik tur
-        //wyswietlac cala
-        //usuwanie
+
 
     public partial class MainWindow : Window
     {
@@ -211,7 +210,7 @@ namespace Inicjator
         {
             //This Method Sets up The Battle
 
-            //Check if there is more than 1 hero in each List<Hero>.
+            //Check if there is more than 0 heros in each List<Hero>.
             if (heroList.Count < 1 || enemyList.Count < 1)
             {
                 PrintStatus("Not Enough Participants!");
@@ -288,6 +287,7 @@ namespace Inicjator
             status_log.Foreground = Brushes.Red;
         }
 
+       
     }
 
 }
